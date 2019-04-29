@@ -6,9 +6,9 @@
  */
 
 #ifndef INIT_IDT_H
-#define	INIT_IDT_H
+#define INIT_IDT_H
 
-  void Initialisation_IDT();
+void Initialisation_IDT();
 
-#endif	/* INIT_IDT_H */
+#endif /* INIT_IDT_H */
 

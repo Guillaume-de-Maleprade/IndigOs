@@ -5,7 +5,7 @@
  *
  */
 #ifndef PLAN_MEMOIRE_H
-#define	PLAN_MEMOIRE_H
+#define PLAN_MEMOIRE_H
 
 //##############################################################################
 // PLAN MEMOIRE
@@ -50,12 +50,12 @@
 #define INDEX_DESCRIPTEUR_STACK_NOYAU 3
 #define SELECTEUR_STACK_NOYAU       (INDEX_DESCRIPTEUR_STACK_NOYAU <<3)
 #define BASE_STACK_NOYAU           0x00         // 0 car dans un segment de pile, cete valeur n'est pas exploitée (le bit D sera à 0 donc 
-                                  // début du haut de la pile à 4Go maxi. Sera réglée par ESP
+// début du haut de la pile à 4Go maxi. Sera réglée par ESP
 #define LIMITE_STACK_NOYAU      0x0000000      // autoriser de descendre jusqu'à 0 Mo
 #define DEBUT_STACK_NOYAU       0x2000000      // A partir de 32 mo 
 //-----------------------------------------------------------------------------------
 
 
 
-#endif	/* PLAN_MEMOIRE_H */
+#endif /* PLAN_MEMOIRE_H */
 

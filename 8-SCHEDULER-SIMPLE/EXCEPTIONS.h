@@ -1,6 +1,6 @@
 
 #ifndef EXCEPTIONS_H
-#define	EXCEPTIONS_H
+#define EXCEPTIONS_H
 
 #define NOMBRE_EXCEPTIONS 15
 
@@ -42,5 +42,5 @@ void Exception_CoProcesseur();
 
 void Exception_Par_Defaut();
 
-#endif	/* EXCEPTIONS_H */
+#endif /* EXCEPTIONS_H */
 

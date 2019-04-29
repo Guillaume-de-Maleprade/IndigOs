@@ -7,7 +7,7 @@
 #include "TYPE.h"
 
 #ifndef _ECRAN_H
-#define	_ECRAN_H
+#define _ECRAN_H
 
 #define BLEU       0x01
 #define FOND_BLEU  0x10
@@ -20,10 +20,11 @@
 #define BLANC      ROUGE | VERT | BLEU
 
 #pragma pack(1)
+
 typedef struct {
     UCHAR Caractere;
-    BYTE  Attribut;
-}T_CARACTERE_ECRAN;
+    BYTE Attribut;
+} T_CARACTERE_ECRAN;
 #pragma pack()
 
 extern BYTE* Video;
@@ -31,17 +32,17 @@ extern T_CARACTERE_ECRAN* Map_Video;
 
 //------------------------------------------------------------
 
-  void Efface_Ecran();
-  void Remplir_Ecran(UCHAR P_Caractere, BYTE P_Attribut);
-  void Defilement_Haut();
-  void Positionne_Curseur(BYTE P_X, BYTE P_Y);
-  void Affiche_Caractere(UCHAR P_Caractere);
-  void Affiche_Chaine(UCHAR* P_Chaine);
-  void Regle_Couleur(BYTE P_Attribut);
-  BYTE Donne_Curseur_X();
-  BYTE Donne_Curseur_Y();
+void Efface_Ecran();
+void Remplir_Ecran(UCHAR P_Caractere, BYTE P_Attribut);
+void Defilement_Haut();
+void Positionne_Curseur(BYTE P_X, BYTE P_Y);
+void Affiche_Caractere(UCHAR P_Caractere);
+void Affiche_Chaine(UCHAR* P_Chaine);
+void Regle_Couleur(BYTE P_Attribut);
+BYTE Donne_Curseur_X();
+BYTE Donne_Curseur_Y();
 
 
 
-#endif	/* _ECRAN_H */
+#endif /* _ECRAN_H */
 

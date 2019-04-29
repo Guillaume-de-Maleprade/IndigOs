@@ -94,153 +94,154 @@ Address of section .data set to 0x200000
  *(.iplt)
  .iplt          0x00000000        0x0 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
 
-.text           0x00100000     0x180b
+.text           0x00100000     0x174b
  *(.text.unlikely .text.*_unlikely)
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x00100000       0x18 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
                 0x00100000                _start
- .text          0x00100018      0x4a8 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
+ .text          0x00100018      0x457 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
                 0x00100018                Affiche_Informations_Boot
                 0x00100095                Affiche_Message
                 0x00100113                OS_Start
-                0x00100172                Ajoute_Thread
-                0x001001f1                Get_Thread
-                0x0010025f                Get_Next_Thread
-                0x001002f7                Tache_1
-                0x0010032a                Tache_2
-                0x0010035d                Tache_3
-                0x00100390                Tache_4
-                0x001003c3                Ordonnancer
-                0x001003e7                OS_Main
- .text          0x001004c0      0x30e build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
-                0x001004c0                Affiche_Message_Exception
-                0x001005a4                CallBack_Erreur_Division
-                0x001005d2                CallBack_Mise_Au_Point
-                0x001005f4                CallBack_INT3
-                0x00100615                CallBack_Debordement
-                0x00100637                CallBack_Limite
-                0x00100659                CallBack_CodeOP_Invalide
-                0x0010067b                CallBack_DNA
-                0x0010069d                CallBack_Double_Faute
-                0x001006bf                CallBack_Depassement
-                0x001006e1                CallBack_TSS_Invalide
-                0x00100703                CallBack_Segment_Non_Present
-                0x00100725                CallBack_Segment_Pile
-                0x00100747                CallBack_Violation_Protection
-                0x00100769                CallBack_Defaut_De_Page
-                0x0010078b                CallBack_CoProcesseur
-                0x001007ad                CallBack_Exception_Par_Defaut
- *fill*         0x001007ce        0x2 90909090
- .text          0x001007d0      0x207 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
-                0x001007d0                CallBack_IRQ0
-                0x001007ee                CallBack_IRQ1
-                0x00100833                CallBack_IRQ3
-                0x00100851                CallBack_IRQ4
-                0x0010086f                CallBack_IRQ5
-                0x0010088d                CallBack_IRQ6
-                0x001008ab                CallBack_IRQ7
-                0x001008c9                CallBack_IRQ8
-                0x001008e7                CallBack_IRQ9
-                0x00100905                CallBack_IRQ10
-                0x00100923                CallBack_IRQ11
-                0x00100941                CallBack_IRQ12
-                0x0010095f                CallBack_IRQ13
-                0x0010097d                CallBack_IRQ14
-                0x0010099b                CallBack_IRQ15
-                0x001009b9                CallBack_Defaut
- *fill*         0x001009d7        0x1 90909090
- .text          0x001009d8       0x2b build/Debug/MinGW_ELF-Windows/DELAY.o
-                0x001009d8                Attendre_ms
-                0x001009f9                Donne_Nombres_Tics
- *fill*         0x00100a03        0x1 90909090
- .text          0x00100a04      0x385 build/Debug/MinGW_ELF-Windows/Descripteurs.o
-                0x00100a04                Configure_Descripteur_Segment
-                0x00100cf0                Configure_Descripteur_Guichet
- *fill*         0x00100d89        0x7 90909090
- .text          0x00100d90      0x1b0 build/Debug/MinGW_ELF-Windows/EXCEPTION.o
-                0x00100d90                Exception_Erreur_Division
-                0x00100dab                Exception_Mise_Au_Point
-                0x00100dc6                Exception_INT3
-                0x00100de1                Exception_Debordement
-                0x00100dfc                Exception_Limite
-                0x00100e17                Exception_CodeOP_Invalide
-                0x00100e32                Exception_DNA
-                0x00100e4d                Exception_Double_Faute
-                0x00100e68                Exception_Depassement
-                0x00100e83                Exception_TSS_Invalide
-                0x00100e9e                Exception_Segment_Non_Present
-                0x00100eb9                Exception_Segment_Pile
-                0x00100ed4                Exception_Violation_Protection
-                0x00100eef                Exception_Defaut_De_Page
-                0x00100f0a                Exception_CoProcesseur
-                0x00100f25                Exception_Par_Defaut
- .text          0x00100f40      0x35f build/Debug/MinGW_ELF-Windows/Ecran.o
-                0x00100f40                Efface_Ecran
-                0x00100f97                Remplir_Ecran
-                0x00100ff0                Defilement_Haut
-                0x00101095                Positionne_Curseur
-                0x001010b9                Affiche_Curseur
-                0x00101117                Repositionne_Curseur
-                0x00101146                Affiche_Caractere
-                0x0010122f                Affiche_Chaine
-                0x0010126b                Regle_Couleur
-                0x00101281                Donne_Curseur_X
-                0x00101290                Donne_Curseur_Y
- *fill*         0x0010129f        0x1 90909090
- .text          0x001012a0       0x24 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
-                0x001012a0                Lecture_Scan_Code
-                0x001012a3                Attendre_Scan_Code
-                0x001012ae                Attendre_Touche_Relache
- *fill*         0x001012c4        0xc 90909090
- .text          0x001012d0       0x1d build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
-                0x001012d0                Initialisation_8253
- *fill*         0x001012ed        0x3 90909090
- .text          0x001012f0      0x137 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
-                0x001012f0                Configuration_Descripteurs_Exceptions
-                0x00101353                Configuration_Descripteurs_IRQ
-                0x001013b6                Initialisation_IDT
- *fill*         0x00101427        0x9 90909090
- .text          0x00101430      0x180 build/Debug/MinGW_ELF-Windows/IRQ.o
-                0x00101430                Interruption_IRQ0
-                0x00101448                Interruption_IRQ1
-                0x00101460                Interruption_IRQ3
-                0x00101478                Interruption_IRQ4
-                0x00101490                Interruption_IRQ5
-                0x001014a8                Interruption_IRQ6
-                0x001014c0                Interruption_IRQ7
-                0x001014d8                Interruption_IRQ8
-                0x001014f0                Interruption_IRQ9
-                0x00101508                Interruption_IRQ10
-                0x00101520                Interruption_IRQ11
-                0x00101538                Interruption_IRQ12
-                0x00101550                Interruption_IRQ13
-                0x00101568                Interruption_IRQ14
-                0x00101580                Interruption_IRQ15
- .text          0x001015b0       0xe3 build/Debug/MinGW_ELF-Windows/Init_GDT.o
-                0x001015b0                Intialisation_Descripteurs_Noyau
-                0x00101659                Initialisation_GDT
- *fill*         0x00101693        0x1 90909090
- .text          0x00101694      0x132 build/Debug/MinGW_ELF-Windows/Outils.o
-                0x00101694                Taille_Chaine
-                0x001016be                Entier_Vers_Chaine
-                0x00101723                Entier_Vers_Chaine_Hexa
- *fill*         0x001017c6        0x2 90909090
- .text          0x001017c8       0x43 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
-                0x001017c8                Initialisation_8259A
+                0x00100121                Ajoute_Thread
+                0x001001a0                Get_Thread
+                0x0010020e                Get_Next_Thread
+                0x001002a6                Tache_1
+                0x001002d9                Tache_2
+                0x0010030c                Tache_3
+                0x0010033f                Tache_4
+                0x00100372                Ordonnancer
+                0x00100396                OS_Main
+ *fill*         0x0010046f        0x1 90909090
+ .text          0x00100470      0x30e build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
+                0x00100470                Affiche_Message_Exception
+                0x00100554                CallBack_Erreur_Division
+                0x00100582                CallBack_Mise_Au_Point
+                0x001005a4                CallBack_INT3
+                0x001005c5                CallBack_Debordement
+                0x001005e7                CallBack_Limite
+                0x00100609                CallBack_CodeOP_Invalide
+                0x0010062b                CallBack_DNA
+                0x0010064d                CallBack_Double_Faute
+                0x0010066f                CallBack_Depassement
+                0x00100691                CallBack_TSS_Invalide
+                0x001006b3                CallBack_Segment_Non_Present
+                0x001006d5                CallBack_Segment_Pile
+                0x001006f7                CallBack_Violation_Protection
+                0x00100719                CallBack_Defaut_De_Page
+                0x0010073b                CallBack_CoProcesseur
+                0x0010075d                CallBack_Exception_Par_Defaut
+ *fill*         0x0010077e        0x2 90909090
+ .text          0x00100780      0x207 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
+                0x00100780                CallBack_IRQ0
+                0x0010079e                CallBack_IRQ1
+                0x001007e3                CallBack_IRQ3
+                0x00100801                CallBack_IRQ4
+                0x0010081f                CallBack_IRQ5
+                0x0010083d                CallBack_IRQ6
+                0x0010085b                CallBack_IRQ7
+                0x00100879                CallBack_IRQ8
+                0x00100897                CallBack_IRQ9
+                0x001008b5                CallBack_IRQ10
+                0x001008d3                CallBack_IRQ11
+                0x001008f1                CallBack_IRQ12
+                0x0010090f                CallBack_IRQ13
+                0x0010092d                CallBack_IRQ14
+                0x0010094b                CallBack_IRQ15
+                0x00100969                CallBack_Defaut
+ *fill*         0x00100987        0x1 90909090
+ .text          0x00100988       0x2b build/Debug/MinGW_ELF-Windows/DELAY.o
+                0x00100988                Attendre_ms
+                0x001009a9                Donne_Nombres_Tics
+ *fill*         0x001009b3        0x1 90909090
+ .text          0x001009b4      0x385 build/Debug/MinGW_ELF-Windows/Descripteurs.o
+                0x001009b4                Configure_Descripteur_Segment
+                0x00100ca0                Configure_Descripteur_Guichet
+ *fill*         0x00100d39        0x7 90909090
+ .text          0x00100d40      0x1b0 build/Debug/MinGW_ELF-Windows/EXCEPTION.o
+                0x00100d40                Exception_Erreur_Division
+                0x00100d5b                Exception_Mise_Au_Point
+                0x00100d76                Exception_INT3
+                0x00100d91                Exception_Debordement
+                0x00100dac                Exception_Limite
+                0x00100dc7                Exception_CodeOP_Invalide
+                0x00100de2                Exception_DNA
+                0x00100dfd                Exception_Double_Faute
+                0x00100e18                Exception_Depassement
+                0x00100e33                Exception_TSS_Invalide
+                0x00100e4e                Exception_Segment_Non_Present
+                0x00100e69                Exception_Segment_Pile
+                0x00100e84                Exception_Violation_Protection
+                0x00100e9f                Exception_Defaut_De_Page
+                0x00100eba                Exception_CoProcesseur
+                0x00100ed5                Exception_Par_Defaut
+ .text          0x00100ef0      0x2e8 build/Debug/MinGW_ELF-Windows/Ecran.o
+                0x00100ef0                Efface_Ecran
+                0x00100f15                Remplir_Ecran
+                0x00100f29                Defilement_Haut
+                0x00100fce                Positionne_Curseur
+                0x00100ff2                Affiche_Curseur
+                0x00101050                Repositionne_Curseur
+                0x0010107f                Affiche_Caractere
+                0x00101168                Affiche_Chaine
+                0x001011a4                Regle_Couleur
+                0x001011ba                Donne_Curseur_X
+                0x001011c9                Donne_Curseur_Y
+ *fill*         0x001011d8        0x8 90909090
+ .text          0x001011e0       0x24 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
+                0x001011e0                Lecture_Scan_Code
+                0x001011e3                Attendre_Scan_Code
+                0x001011ee                Attendre_Touche_Relache
+ *fill*         0x00101204        0xc 90909090
+ .text          0x00101210       0x1d build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
+                0x00101210                Initialisation_8253
+ *fill*         0x0010122d        0x3 90909090
+ .text          0x00101230      0x137 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
+                0x00101230                Configuration_Descripteurs_Exceptions
+                0x00101293                Configuration_Descripteurs_IRQ
+                0x001012f6                Initialisation_IDT
+ *fill*         0x00101367        0x9 90909090
+ .text          0x00101370      0x180 build/Debug/MinGW_ELF-Windows/IRQ.o
+                0x00101370                Interruption_IRQ0
+                0x00101388                Interruption_IRQ1
+                0x001013a0                Interruption_IRQ3
+                0x001013b8                Interruption_IRQ4
+                0x001013d0                Interruption_IRQ5
+                0x001013e8                Interruption_IRQ6
+                0x00101400                Interruption_IRQ7
+                0x00101418                Interruption_IRQ8
+                0x00101430                Interruption_IRQ9
+                0x00101448                Interruption_IRQ10
+                0x00101460                Interruption_IRQ11
+                0x00101478                Interruption_IRQ12
+                0x00101490                Interruption_IRQ13
+                0x001014a8                Interruption_IRQ14
+                0x001014c0                Interruption_IRQ15
+ .text          0x001014f0       0xe3 build/Debug/MinGW_ELF-Windows/Init_GDT.o
+                0x001014f0                Intialisation_Descripteurs_Noyau
+                0x00101599                Initialisation_GDT
+ *fill*         0x001015d3        0x1 90909090
+ .text          0x001015d4      0x132 build/Debug/MinGW_ELF-Windows/Outils.o
+                0x001015d4                Taille_Chaine
+                0x001015fe                Entier_Vers_Chaine
+                0x00101663                Entier_Vers_Chaine_Hexa
+ *fill*         0x00101706        0x2 90909090
+ .text          0x00101708       0x43 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
+                0x00101708                Initialisation_8259A
  *(.gnu.warning)
 
 .fini
  *(.fini)
-                0x0010180b                PROVIDE (__etext, .)
-                0x0010180b                PROVIDE (_etext, .)
-                0x0010180b                PROVIDE (etext, .)
+                0x0010174b                PROVIDE (__etext, .)
+                0x0010174b                PROVIDE (_etext, .)
+                0x0010174b                PROVIDE (etext, .)
 
-.rodata         0x0010180c      0x2f5
+.rodata         0x0010174c      0x2ad
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0010180c      0x138 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
- .rodata        0x00101944      0x11a build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
- .rodata        0x00101a5e       0x65 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
- .rodata        0x00101ac3       0x3e build/Debug/MinGW_ELF-Windows/Descripteurs.o
+ .rodata        0x0010174c       0xf0 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
+ .rodata        0x0010183c      0x11a build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
+ .rodata        0x00101956       0x65 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
+ .rodata        0x001019bb       0x3e build/Debug/MinGW_ELF-Windows/Descripteurs.o
 
 .rodata1
  *(.rodata1)
@@ -253,7 +254,7 @@ Address of section .data set to 0x200000
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x00101b01                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x001019f9                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
                 0x00102000                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
@@ -382,41 +383,41 @@ Address of section .data set to 0x200000
                 0x002001d0                PROVIDE (end, .)
                 0x002001d0                . = DATA_SEGMENT_END (.)
 
-.stab           0x00000000     0x3cd8
+.stab           0x00000000     0x3bf4
  *(.stab)
  .stab          0x00000000       0x90 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
- .stab          0x00000090      0x7a4 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
-                                0x7b0 (size before relaxing)
- .stab          0x00000834      0x870 build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
+ .stab          0x00000090      0x75c build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
+                                0x768 (size before relaxing)
+ .stab          0x000007ec      0x870 build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
                                 0x894 (size before relaxing)
- .stab          0x000010a4      0x648 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
+ .stab          0x0000105c      0x648 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
                                 0x6cc (size before relaxing)
- .stab          0x000016ec      0x1ec build/Debug/MinGW_ELF-Windows/DELAY.o
+ .stab          0x000016a4      0x1ec build/Debug/MinGW_ELF-Windows/DELAY.o
                                 0x258 (size before relaxing)
- .stab          0x000018d8      0x4f8 build/Debug/MinGW_ELF-Windows/Descripteurs.o
+ .stab          0x00001890      0x4f8 build/Debug/MinGW_ELF-Windows/Descripteurs.o
                                 0x57c (size before relaxing)
- .stab          0x00001dd0      0x618 build/Debug/MinGW_ELF-Windows/EXCEPTION.o
+ .stab          0x00001d88      0x618 build/Debug/MinGW_ELF-Windows/EXCEPTION.o
                                 0x624 (size before relaxing)
- .stab          0x000023e8      0x804 build/Debug/MinGW_ELF-Windows/Ecran.o
-                                0x870 (size before relaxing)
- .stab          0x00002bec       0xf0 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
+ .stab          0x000023a0      0x768 build/Debug/MinGW_ELF-Windows/Ecran.o
+                                0x7d4 (size before relaxing)
+ .stab          0x00002b08       0xf0 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
                                  0xfc (size before relaxing)
- .stab          0x00002cdc       0xd8 build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
+ .stab          0x00002bf8       0xd8 build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
                                  0xe4 (size before relaxing)
- .stab          0x00002db4      0x360 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
+ .stab          0x00002cd0      0x360 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
                                 0x408 (size before relaxing)
- .stab          0x00003114      0x3d8 build/Debug/MinGW_ELF-Windows/IRQ.o
+ .stab          0x00003030      0x3d8 build/Debug/MinGW_ELF-Windows/IRQ.o
                                 0x3e4 (size before relaxing)
- .stab          0x000034ec      0x258 build/Debug/MinGW_ELF-Windows/Init_GDT.o
+ .stab          0x00003408      0x258 build/Debug/MinGW_ELF-Windows/Init_GDT.o
                                 0x300 (size before relaxing)
- .stab          0x00003744      0x3e4 build/Debug/MinGW_ELF-Windows/Outils.o
+ .stab          0x00003660      0x3e4 build/Debug/MinGW_ELF-Windows/Outils.o
                                 0x450 (size before relaxing)
- .stab          0x00003b28      0x1b0 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
+ .stab          0x00003a44      0x1b0 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
                                 0x21c (size before relaxing)
 
-.stabstr        0x00000000     0x1b95
+.stabstr        0x00000000     0x1ba4
  *(.stabstr)
- .stabstr       0x00000000     0x1b95 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
+ .stabstr       0x00000000     0x1ba4 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
 
 .stab.excl
  *(.stab.excl)

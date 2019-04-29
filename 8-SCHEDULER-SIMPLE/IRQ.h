@@ -2,7 +2,7 @@
 
 
 #ifndef IRQ_H
-#define	IRQ_H
+#define IRQ_H
 #define NOMBRE_IRQ      15
 
 #define INT_IRQ0         0x20
@@ -41,5 +41,5 @@ void Interruption_IRQ_Defaut();
 
 
 
-#endif	/* IRQ_H */
+#endif /* IRQ_H */
 

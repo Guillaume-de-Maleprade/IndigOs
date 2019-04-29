@@ -6,7 +6,7 @@
  */
 
 #ifndef CALLBACK_USER_H
-#define	CALLBACK_USER_H
+#define CALLBACK_USER_H
 #include "type.h"
 
 
@@ -14,14 +14,13 @@
 
 typedef void (*T_FUNCTION_USER_CALLBACK)(void);
 
- 
- typedef struct  {
-   T_FUNCTION_USER_CALLBACK  La_Fonction;
-   UINT32 Periode;
-   UINT32 Temps_Enclenchement;
-}T_USER_CALLBACK;
+typedef struct {
+    T_FUNCTION_USER_CALLBACK La_Fonction;
+    UINT32 Periode;
+    UINT32 Temps_Enclenchement;
+} T_USER_CALLBACK;
 
 extern T_USER_CALLBACK User_Callback[NOMBRE_MAX_CALLBACK_USER];
- 
-#endif	/* CALLBACK_USER_H */
+
+#endif /* CALLBACK_USER_H */
 

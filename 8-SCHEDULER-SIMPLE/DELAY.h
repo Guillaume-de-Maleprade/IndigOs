@@ -6,12 +6,12 @@
  */
 
 #ifndef DELAY_H
-#define	DELAY_H
+#define DELAY_H
 
 
 
 void Attendre_ms(UINT32 P_Duree);
 
 UINT32 Donne_Nombres_Tics();
-#endif	/* DELAY_H */
+#endif /* DELAY_H */
 

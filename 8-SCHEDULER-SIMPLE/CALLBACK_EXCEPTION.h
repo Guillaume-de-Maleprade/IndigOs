@@ -1,6 +1,6 @@
 
 #ifndef CALLBACK_EXCEPTION_H
-#define	CALLBACK_EXCEPTION_H
+#define CALLBACK_EXCEPTION_H
 
 void CallBack_Erreur_Division(UINT32);
 void CallBack_Mise_Au_Point(UINT32);
@@ -19,5 +19,5 @@ void CallBack_Defaut_De_Page(UINT32);
 void CallBack_CoProcesseur(UINT32);
 
 
-#endif	/* CALLBACK_EXCEPTION_H */
+#endif /* CALLBACK_EXCEPTION_H */
 

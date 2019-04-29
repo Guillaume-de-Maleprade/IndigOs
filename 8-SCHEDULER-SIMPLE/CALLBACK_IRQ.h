@@ -1,6 +1,6 @@
 
 #ifndef ROUTINES_INTERRUPTION_H
-#define	ROUTINES_INTERRUPTION_H
+#define ROUTINES_INTERRUPTION_H
 
 
 //-----------------------------------------------------------------------------
@@ -24,5 +24,5 @@ void CallBack_IRQ15();
 
 void CallBack_Defaut();
 
-#endif	/* ROUTINES_INTERRUPTION_H */
+#endif /* ROUTINES_INTERRUPTION_H */
 

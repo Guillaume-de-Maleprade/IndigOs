@@ -84,22 +84,20 @@ E = 1 : famille x86
                                 OUT_PAUSE(P_Port+1, P_ICW3); \
                                 OUT_PAUSE(P_Port+1, P_ICW4);  
 
+void Initialisation_8259A() {
+    Configure_ICW_8258A(CTRL_8258A_Maitre,
+            0x11, // Il existe un registre ICW4
+            0x20, // les IRQ du maitre génèreront des INT de 20h à int 27h 
+            0X04, // un esclave est connecté sur le bit 2
+            0X01); // en mode Intel
 
-void Initialisation_8259A()
-{
-    Configure_ICW_8258A(CTRL_8258A_Maitre, 
-                        0x11, // Il existe un registre ICW4
-                        0x20, // les IRQ du maitre génèreront des INT de 20h à int 27h 
-                        0X04, // un esclave est connecté sur le bit 2
-                        0X01);// en mode Intel
+    Configure_ICW_8258A(CTRL_8258A_Esclave,
+            0x11, // Il existe un registre ICW4
+            0x70, // les IRQ du maitre génèreront des INT de 70h à int 77h 
+            0X02, // un esclave est connecté sur le bit 2
+            0X01); // en mode Intel
 
-    Configure_ICW_8258A(CTRL_8258A_Esclave,  
-                        0x11, // Il existe un registre ICW4
-                        0x70, // les IRQ du maitre génèreront des INT de 70h à int 77h 
-                        0X02, // un esclave est connecté sur le bit 2
-                        0X01);// en mode Intel
-   
-  OUT(CTRL_8258A_Maitre+1,  0x0);  // aucune interruption n'est masquée
-  OUT(CTRL_8258A_Esclave+1, 0x0);
+    OUT(CTRL_8258A_Maitre + 1, 0x0); // aucune interruption n'est masquée
+    OUT(CTRL_8258A_Esclave + 1, 0x0);
 }
 

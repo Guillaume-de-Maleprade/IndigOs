@@ -5,7 +5,7 @@
  *
  */
 #ifndef MACRO_H
-#define	MACRO_H
+#define MACRO_H
 
 #define VALEUR_DE(P_Valeur) #P_Valeur
 
@@ -13,7 +13,7 @@
                                asm ("jmp "VALEUR_DE(Selecteur)":Suivant"); \
                                asm ( "Suivant: "); \
                                asm (".att_syntax noprefix \n");
- 
+
 #define INITIALISER_REGISTRE_GDTR(ADRESSE_GDT) \
                                asm(".intel_syntax noprefix "); \
                                asm("lgdt "VALEUR_DE(ADRESSE_GDT));\
@@ -49,7 +49,7 @@
 #define MOV(Registre, Valeur)  asm (".intel_syntax noprefix "); \
                                asm (" mov " VALEUR_DE(Registre) "," VALEUR_DE(Valeur) ); \
                                asm (".att_syntax noprefix \n");
- 
+
 #define OUT(Port, Valeur)      asm (".intel_syntax noprefix "); \
                                asm (" mov dx," VALEUR_DE(Port)); \
                                asm (" mov al," VALEUR_DE(Valeur)); \
@@ -61,7 +61,7 @@
                                asm ("out " VALEUR_DE(Port) ",al"); \
                                asm ("jmp  $+2 "); \
                                asm (" .att_syntax noprefix \n");
- 
+
 #define PUSHALL               asm (".intel_syntax noprefix "); \
                               asm ("pushad "); \
                               asm ("push DS"); \
@@ -69,7 +69,7 @@
                               asm ("push FS"); \
                               asm ("push GS"); \
                               asm (".att_syntax noprefix \n");
- 
+
 #define POPALL                asm (".intel_syntax noprefix"); \
                               asm ("pop GS "); \
                               asm ("pop FS "); \
@@ -94,5 +94,5 @@
 #define INTERDIRE_INTERRUPTION CLI
 
 
-#endif	/* MACRO_H */
+#endif /* MACRO_H */
 
