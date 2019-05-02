@@ -8,6 +8,7 @@
 #include "PLAN_MEMOIRE.h"
 #include "HARD_8042_Clavier.h"
 #include "DELAY.h"
+#include "indigos_logo.h"
 
 
 /*
@@ -63,7 +64,8 @@ void OS_Start(T_BOOT_INFO* P_Info) {
     // NE PAS ETRE DANS UNE FONCTION CAR à la sortie d'une fonction, le regsitre ESP est réinitialisé à la valeur précédant l'appel.
     //  INITIALISE_SS_ESP(SELECTEUR_STACK_NOYAU,DEBUT_STACK_NOYAU);
 
-
+    Affiche_Logo(indigos_logo);
+    
     INITIALISE_SS_ESP(SELECTEUR_STACK_NOYAU, DEBUT_STACK_NOYAU)
     OS_Main();
     asm ("NOP");
@@ -179,7 +181,8 @@ void OS_Main() {
 
     AUTORISE_INTERRUPTION;
     //---------------------------------------------------------------------------- 
-
+    //Affiche_Logo(indigos_logo);
+    
     Ajoute_Thread(Tache_1, 100);
     Ajoute_Thread(Tache_2, 200);
     Ajoute_Thread(Tache_3, 500);

@@ -156,6 +156,29 @@ void Regle_Couleur(BYTE P_Attribut) {
     Attribut_Actuel = P_Attribut;
 }
 
+void Affiche_Logo(UCHAR P_Chaine[]) {
+    Efface_Ecran();
+    int L_Index = 0;
+
+    while (P_Chaine[L_Index] != 0) {
+        if(P_Chaine[L_Index] == '@'){
+            Regle_Couleur(BLEU);
+        }else{
+            Regle_Couleur(LUMINEUX);
+        }
+        Affiche_Caractere(P_Chaine[L_Index]);
+        L_Index++;
+    }
+    UINT32 i = 0;
+    while(i < 1000000){
+        UINT32 j = 0;
+        while(j < 100){
+            j++;
+        }
+        i++;
+    }
+    Affiche_Curseur();
+}
 
 //--------------------------------------------------------------------------------------------------
 

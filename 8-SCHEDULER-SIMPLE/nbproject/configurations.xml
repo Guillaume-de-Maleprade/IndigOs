@@ -56,13 +56,14 @@
     <itemPath>PIC_8259A.c</itemPath>
     <itemPath>PIC_8259A.h</itemPath>
     <itemPath>PLAN_MEMOIRE.h</itemPath>
+    <itemPath>indigos_logo.h</itemPath>
     <itemPath>type.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
-        <compilerSet>default</compilerSet>
+        <compilerSet>MinGW_ELF|MinGW</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
@@ -139,6 +140,8 @@
       <item path="PIC_8259A.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PLAN_MEMOIRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="indigos_logo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="type.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -232,6 +235,8 @@
       <item path="PIC_8259A.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PLAN_MEMOIRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="indigos_logo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="type.h" ex="false" tool="3" flavor2="0">
       </item>
