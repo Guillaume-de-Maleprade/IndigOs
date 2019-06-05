@@ -105,7 +105,7 @@ int findInodeByName(int fd, int base_inode_num, char* filename, int filetype) {
 	assert(lseek(fd, (off_t)(inodes[base_inode_num-1].i_block[0]*1024), SEEK_SET) == (off_t)(inodes[base_inode_num-1].i_block[0]*1024));
 	assert(read(fd, (void *)dirEntry, sizeof(struct direntry)) == sizeof(struct direntry));
 
-	 while (dirEntry->inode) {
+	while (dirEntry->inode) {
 
 		name = (char*)malloc(dirEntry->name_len+1);
 		memcpy(name, dirEntry->file_name, dirEntry->name_len);
@@ -139,7 +139,7 @@ void ls(int fd, int base_inode_num) {
 	assert(read(fd, (void *)dirEntry, sizeof(struct direntry)) == sizeof(struct direntry));
 
 
-     printf("%s", "permissions\tuid\tgid\tsecteurs\tinode\tnom\n");
+         printf("%s", "permissions\tuid\tgid\tsecteurs\tinode\tnom\n");
 	 while (dirEntry->inode) {
 		name = (char*)malloc(dirEntry->name_len+1);
 		memcpy(name, dirEntry->file_name, dirEntry->name_len);
