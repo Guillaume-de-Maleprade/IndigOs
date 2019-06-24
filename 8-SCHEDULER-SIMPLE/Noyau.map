@@ -175,7 +175,7 @@ Address of section .data set to 0x200000
                 0x00100eff                Exception_Defaut_De_Page
                 0x00100f1a                Exception_CoProcesseur
                 0x00100f35                Exception_Par_Defaut
- .text          0x00100f50      0x3b5 build/Debug/MinGW_ELF-Windows/Ecran.o
+ .text          0x00100f50      0x3ba build/Debug/MinGW_ELF-Windows/Ecran.o
                 0x00100f50                Efface_Ecran
                 0x00100f75                Remplir_Ecran
                 0x00100fce                Defilement_Haut
@@ -186,9 +186,9 @@ Address of section .data set to 0x200000
                 0x0010120d                Affiche_Chaine
                 0x00101249                Regle_Couleur
                 0x0010125f                Affiche_Logo
-                0x001012e7                Donne_Curseur_X
-                0x001012f6                Donne_Curseur_Y
- *fill*         0x00101305        0xb 90909090
+                0x001012ec                Donne_Curseur_X
+                0x001012fb                Donne_Curseur_Y
+ *fill*         0x0010130a        0x6 90909090
  .text          0x00101310       0x24 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
                 0x00101310                Lecture_Scan_Code
                 0x00101313                Attendre_Scan_Code
@@ -237,12 +237,12 @@ Address of section .data set to 0x200000
                 0x0010187b                PROVIDE (_etext, .)
                 0x0010187b                PROVIDE (etext, .)
 
-.rodata         0x0010187c      0x6e1
+.rodata         0x0010187c      0x6dd
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0010187c      0x524 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
- .rodata        0x00101da0      0x11a build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
- .rodata        0x00101eba       0x65 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
- .rodata        0x00101f1f       0x3e build/Debug/MinGW_ELF-Windows/Descripteurs.o
+ .rodata        0x0010187c      0x520 build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
+ .rodata        0x00101d9c      0x11a build/Debug/MinGW_ELF-Windows/CALLBACK_EXCEPTION.o
+ .rodata        0x00101eb6       0x65 build/Debug/MinGW_ELF-Windows/CALLBACK_IRQ.o
+ .rodata        0x00101f1b       0x3e build/Debug/MinGW_ELF-Windows/Descripteurs.o
 
 .rodata1
  *(.rodata1)
@@ -255,7 +255,7 @@ Address of section .data set to 0x200000
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x00101f5d                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00101f59                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
                 0x00102000                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
@@ -385,7 +385,7 @@ Address of section .data set to 0x200000
                 0x002001d0                PROVIDE (end, .)
                 0x002001d0                . = DATA_SEGMENT_END (.)
 
-.stab           0x00000000     0x3e1c
+.stab           0x00000000     0x3e28
  *(.stab)
  .stab          0x00000000       0x90 build/Debug/MinGW_ELF-Windows/0-Noyau_Start.o
  .stab          0x00000090      0x7ec build/Debug/MinGW_ELF-Windows/1-NOYAU_MAIN.o
@@ -400,21 +400,21 @@ Address of section .data set to 0x200000
                                 0x57c (size before relaxing)
  .stab          0x00001e24      0x618 build/Debug/MinGW_ELF-Windows/EXCEPTION.o
                                 0x624 (size before relaxing)
- .stab          0x0000243c      0x8f4 build/Debug/MinGW_ELF-Windows/Ecran.o
-                                0x960 (size before relaxing)
- .stab          0x00002d30       0xf0 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
+ .stab          0x0000243c      0x900 build/Debug/MinGW_ELF-Windows/Ecran.o
+                                0x96c (size before relaxing)
+ .stab          0x00002d3c       0xf0 build/Debug/MinGW_ELF-Windows/HARD_8042_Clavier.o
                                  0xfc (size before relaxing)
- .stab          0x00002e20       0xd8 build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
+ .stab          0x00002e2c       0xd8 build/Debug/MinGW_ELF-Windows/HARD_8253_Timer.o
                                  0xe4 (size before relaxing)
- .stab          0x00002ef8      0x360 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
+ .stab          0x00002f04      0x360 build/Debug/MinGW_ELF-Windows/INIT_IDT.o
                                 0x408 (size before relaxing)
- .stab          0x00003258      0x3d8 build/Debug/MinGW_ELF-Windows/IRQ.o
+ .stab          0x00003264      0x3d8 build/Debug/MinGW_ELF-Windows/IRQ.o
                                 0x3e4 (size before relaxing)
- .stab          0x00003630      0x258 build/Debug/MinGW_ELF-Windows/Init_GDT.o
+ .stab          0x0000363c      0x258 build/Debug/MinGW_ELF-Windows/Init_GDT.o
                                 0x300 (size before relaxing)
- .stab          0x00003888      0x3e4 build/Debug/MinGW_ELF-Windows/Outils.o
+ .stab          0x00003894      0x3e4 build/Debug/MinGW_ELF-Windows/Outils.o
                                 0x450 (size before relaxing)
- .stab          0x00003c6c      0x1b0 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
+ .stab          0x00003c78      0x1b0 build/Debug/MinGW_ELF-Windows/PIC_8259A.o
                                 0x21c (size before relaxing)
 
 .stabstr        0x00000000     0x1bda
