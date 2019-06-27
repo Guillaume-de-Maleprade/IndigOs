@@ -61,7 +61,7 @@ void mem_free(void *);
 
 Equivaut à la fonction malloc() à développer :
 ```c
-void * mem_alloc(size);
+void * mem_alloc(size_m);
 ```
 
 Affiche l’état actuel de la mémoire (aide pour dev) :
