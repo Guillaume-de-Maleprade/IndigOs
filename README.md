@@ -13,7 +13,7 @@ Conception en liste chaînée
 
 Nous avons créé une structure *node *contenant
 
--   <code>node</code> : Node suivante
+-   <code>next</code> : Node suivante
 -   <code>size</code> : Taille de l’élément contenu dans la node ou de la mémoire libre
 -   <code>addr</code> : Adresse de l’élément à renvoyer
 -   <code>allocated</code>: Booléen pour savoir si la *node* est allouée ou non.
