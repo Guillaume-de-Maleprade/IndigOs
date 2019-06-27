@@ -87,3 +87,9 @@ Perspectives d’améliorations
 ============================
 
 Supprimer la variable *addr* car nous connaissons la taille exacte de notre structure. Nous pouvons donc la calculer aisément (on passerait d’une taille de 16 octets à 12 octets par *node*).
+
+
+Lancement
+=========
+
+Dans une invite de commande, lancer `go.cmd`
