@@ -4,7 +4,7 @@
 #define MY_NULL ((void *)0) //x00300000)
 #define ADDR_START ((void *)0x00300010)
 
-#define MEM_SIZE (18036)// * 1024) // * 1024)
+#define MEM_SIZE (4096)// * 1024) // * 1024)
 
 #include <stdio.h>
 #include <stdlib.h>
