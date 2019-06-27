@@ -1,2 +1,5 @@
 2-BOOT-GRUB-MINI
 7-HORLOGE
+8-SCHEDULER-SIMPLE
+mem_alloc
+*.exe
