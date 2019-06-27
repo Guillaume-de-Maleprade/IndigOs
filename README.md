@@ -11,7 +11,7 @@ Pour développer les fonction <code>malloc()</code> et <code>free()</code> nous 
 Conception en liste chaînée
 ---------------------------
 
-Nous avons créé une structure *node *contenant
+Nous avons créé une structure *node* contenant
 
 -   <code>next</code> : Node suivante
 -   <code>size</code> : Taille de l’élément contenu dans la node ou de la mémoire libre
@@ -86,4 +86,4 @@ Pour simplifier le développement, l’allocation se fait à la fin (« à droi
 Perspectives d’améliorations
 ============================
 
-Supprimer la variable *addr *car nous connaissons la taille exacte de notre structure. Nous pouvons donc la calculer aisément (on passerait d’une taille de 16 octets à 12 octets par *node*).
+Supprimer la variable *addr* car nous connaissons la taille exacte de notre structure. Nous pouvons donc la calculer aisément (on passerait d’une taille de 16 octets à 12 octets par *node*).
